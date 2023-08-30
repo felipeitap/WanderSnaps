@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@100;300;500;700&display=swap");
-
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
+.hero{
+  background-image: url(../public/hero-image.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 128px);
+}
 
-.clas {
-  background-color: #b1ccf022;
+.hero-title{
+  color: white;
+  font-size: 2.25rem; 
+  line-height: 2.5rem; 
+  font-weight: 600;
+  /* color:#e5e7eb87 */
 }

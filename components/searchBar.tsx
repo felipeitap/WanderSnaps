@@ -1,23 +1,23 @@
+'use client'
+
 import Image from "next/image";
 import zoom from "../public/Vector.png";
 import chevron from "../public/chevron.png";
+import { useEffect, useState } from "react";
 
-export default function SearchBar() {
+export default function SearchBar({ color } : { color: Boolean }) {
   return (
     <>
-      <div className="flex bg-[#b1ccf022] p-5 w-full gap-4">
+      <div className={`${color ? `bg-[#e5e7eb87]` : "bg-[#b1ccf022]"} flex p-5 w-full gap-4`}>
         <div className="flex items-center cursor-pointer gap-2.5">
           <p>All</p>
           <div>
-            <Image
-              src={chevron}
-              alt="Imagem de uma seta para baixo"
-            />
+            <Image src={chevron} alt="Imagem de uma seta para baixo" />
           </div>
         </div>
         <input
           type="text"
-          className="bg-transparent outline-none cursor-pointer w-full"
+          className="bg-transparent outline-none w-full"
           placeholder="Search for location"
         />
         <Image

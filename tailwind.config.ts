@@ -15,6 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-fira)'],
+        mono: ['var(--font-poppins)']
       },
     },
   },

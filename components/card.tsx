@@ -8,7 +8,7 @@ export default function Card({
   styles?: String;
 }) {
   return (
-    <div className={`${styles} p-6`}>
+    <div className={`${styles} p-6 w-full`}>
       <h4 className="mb-5 font-semibold	text-lg	">{title}</h4>
       {children}
     </div>
