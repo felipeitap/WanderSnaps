@@ -1,9 +1,7 @@
-'use client'
-
 import Image from "next/image";
 import zoom from "../public/Vector.png";
 import chevron from "../public/chevron.png";
-import { useEffect, useState } from "react";
+
 
 export default function SearchBar({ color } : { color: Boolean }) {
   return (
