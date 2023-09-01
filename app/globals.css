@@ -8,17 +8,28 @@
   box-sizing: border-box;
 }
 
-.hero{
+.hero {
   background-image: url(../public/hero-image.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 128px);
 }
 
-.hero-title{
+.hero-title {
   color: white;
-  font-size: 2.25rem; 
-  line-height: 2.5rem; 
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 600;
-  /* color:#e5e7eb87 */
+  /* color: #2b405cb3; */
+
+}
+
+.topic-text {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #2B405C;
+}
+
+.link{
+  cursor: pointer;
 }

@@ -2,11 +2,14 @@ import Image from "next/image";
 import zoom from "../public/Vector.png";
 import chevron from "../public/chevron.png";
 
-
-export default function SearchBar({ color } : { color: Boolean }) {
+export default function SearchBar({ color }: { color?: Boolean }) {
   return (
     <>
-      <div className={`${color ? `bg-[#e5e7eb87]` : "bg-[#b1ccf022]"} flex p-5 w-full gap-4`}>
+      <div
+        className={`${
+          color ? `bg-[#e5e7eb87]` : "bg-[#b1ccf022]"
+        } flex p-5 w-full gap-4`}
+      >
         <div className="flex items-center cursor-pointer gap-2.5">
           <p>All</p>
           <div>
